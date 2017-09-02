@@ -1,3 +1,4 @@
+<% var menu = theme.menu; %>
 <header id="header">
     <div id="header-main" class="header-inner">
         <div class="outer">
@@ -6,8 +7,8 @@
                 <span class="site-title"><%= config.title %></span>
             </a>
             <nav id="main-nav">
-                <% for (var i in theme.menu) { %>
-                    <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+                <% for (var i in menu) { %>
+                    <a class="main-nav-link" href="<%- url_for(menu[i]) %>"><%= i %></a>
                 <% } %>
             </nav>
             <% if(theme.customize.profile && theme.customize.profile.enabled) { %>
@@ -27,8 +28,8 @@
     <div id="main-nav-mobile" class="header-sub header-inner">
         <table class="menu outer">
             <tr>
-                <% for (var i in theme.menu) { %>
-                    <td><a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a></td>
+                <% for (var i in menu) { %>
+                    <td><a class="main-nav-link" href="<%- url_for(menu[i]) %>"><%= i %></a></td>
                 <% } %>
                 <td>
                     <%- partial('search/index-mobile') %>
