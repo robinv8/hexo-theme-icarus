@@ -20,7 +20,7 @@ customize:
         author: robin
         author_title: Web Developer
         location: LanZhou, China
-        follow: https://github.com/robinv8/
+        follow: https://github.com/robinv8
     highlight: monokai
     sidebar: right # sidebar position, options: left, right or leave it empty
     thumbnail: true # enable posts thumbnail, options: true, false
