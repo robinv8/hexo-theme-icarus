@@ -43,8 +43,8 @@
             this.getDetailCount(Counter)
                 .then(function (results) {
                     var len = results.length;
-                    $('.leancloud_visitors').text(results[0]._serverData.time + '人已浏览')
                     if (len > 0) {
+                        $('.leancloud_visitors').text(results[0]._serverData.time + '人已浏览');
                         var counter = results[0];
                         counter.increment("time");
                         counter.save({
