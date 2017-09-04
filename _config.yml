@@ -26,7 +26,7 @@ customize:
     thumbnail: true # enable posts thumbnail, options: true, false
     favicon: # path to favicon
     social_links:
-        github: http://github.com/ppoffice/hexo-theme-icarus
+        github: http://github.com/tranren/hexo-theme-icarus
         twitter: /
         facebook: /
         dribbble: /
@@ -76,7 +76,6 @@ comment:
 
 # Share
 share: default # options: jiathis, bdshare, addtoany, default
-
 # Plugins
 plugins:
     lightgallery: true # options: true, false
