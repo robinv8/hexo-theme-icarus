@@ -43,6 +43,16 @@
         <footer class="article-footer">
             <%- partial('comment/counter', {post: post}) %>
         </footer>
+        <%if(detail){%>
+        <div id="SOHUCS" ></div>
+        <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+        <script type="text/javascript">
+            window.changyan.api.config({
+                appid: 'cytcl5nV8',
+                conf: 'prod_ab1af1090bccdfef82c9c46db57c74bd'
+            });
+        </script>
+        <%}%>
     </div>
     <% if (!index) { %>
     <%- partial('post/nav') %>
