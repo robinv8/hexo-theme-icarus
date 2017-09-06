@@ -10,10 +10,10 @@
             <%- partial('post/title', {class_name: 'article-title'}) %>
             <% if (post.layout != 'page') { %>
             <div class="article-meta">
+                <%- partial('post/source') %>
                 <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
                 <%- partial('post/author') %>
                 <%- partial('post/category') %>
-                <%- partial('post/tag') %>
             </div>
             <% } %>
         </header>
@@ -32,11 +32,15 @@
                 <%- toc(post.content) %>
             </div>
             <% } %>
+            <% if(detail) { %>
             <%- post.content %>
+            <% }else{ %>
+            <%- post.content.substring(0, 200) %>
+            <% } %>
             <% } %>
         </div>
         <footer class="article-footer">
-            <%- partial('comment/counter', {post: post}) %>
+            <%- partial('post/tag') %>
         </footer>
     </div>
     <% if (!index) { %>

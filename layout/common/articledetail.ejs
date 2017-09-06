@@ -10,9 +10,10 @@
             <%- partial('post/title', {class_name: 'article-title'}) %>
             <% if (post.layout != 'page') { %>
             <div class="article-meta">
+                <%- partial('post/source') %>
                 <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+                <%- partial('post/author') %>
                 <%- partial('post/category') %>
-                <%- partial('post/tag') %>
             </div>
             <% } %>
         </header>
