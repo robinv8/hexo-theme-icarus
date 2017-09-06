@@ -46,3 +46,17 @@
 <% if (!index) { %>
 <%- partial('comment/index') %>
 <% } %>
+
+<% if(post.comment){ %>
+<section class="comment-wrap">
+    <div id="SOHUCS"></div>
+</section>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js"></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: 'cytcl5nV8',
+        conf: 'prod_ab1af1090bccdfef82c9c46db57c74bd'
+    });
+</script>
+
+<%}%>

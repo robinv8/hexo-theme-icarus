@@ -44,7 +44,7 @@
                 .then(function (results) {
                     var len = results.length;
                     if (len > 0) {
-                        $('.leancloud_visitors').text(results[0]._serverData.time + '人已浏览');
+                        $('.leancloud_visitors .number').text(results[0]._serverData.time);
                         var counter = results[0];
                         counter.increment("time");
                         counter.save({
@@ -52,6 +52,7 @@
                         }).then(cb);
                     }
                     else {
+                        $('.leancloud_visitors .number').text(0);
                         var newCounter = new Counter();
                         newCounter.set('title', title);
                         newCounter.set('url', url);

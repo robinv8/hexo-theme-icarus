@@ -2,8 +2,6 @@
 menu:
   首页: .
   归档: archives
- # 分类: categories
- # 标签: tags
   关于: about
 
 # Customize
@@ -17,9 +15,9 @@ customize:
         enabled: true # Whether to show profile bar
         avatar: css/images/avatar.png
         gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-        author: robin
-        author_title: Web Developer
-        location: LanZhou, China
+        author: 任裕斌 | robin
+        author_title: Web前端
+        location: 中国 兰州
         follow: https://github.com/robinv8
     highlight: monokai
     sidebar: right # sidebar position, options: left, right or leave it empty
@@ -37,8 +35,6 @@ customize:
 widgets:
     - recent_posts
     - category
-    - archive
-    - tag
     - tagcloud
     - links
 

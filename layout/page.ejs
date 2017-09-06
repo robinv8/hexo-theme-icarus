@@ -1,5 +1,6 @@
+<% console.log(page.source) %>
 <% if (page.source == 'about/index.md') { %>
-<%- partial('common/article', {post: page, index: false, detail: true, comment: false}) %>
+<%- partial('common/article', {post: page, index: false}) %>
 <% }else { %>
-<%- partial('common/article', {post: page, index: false, detail: false}) %>
+<%- partial('common/article', {post: page, index: false}) %>
 <% } %>
