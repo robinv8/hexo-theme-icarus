@@ -99,7 +99,7 @@
          * 详情页保存成功回调
          */
         detailCountSaveCallback: function (counter) {
-            $('#leancloud_value_page_pv').text(counter.attributes.time);
+            $('.leancloud_visitors').text(counter.attributes.time);
         },
 
         siteCountSaveCallback: function (counter) {
