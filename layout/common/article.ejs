@@ -32,11 +32,7 @@
                 <%- toc(post.content) %>
             </div>
             <% } %>
-            <% if(detail) { %>
             <%- post.content %>
-            <% }else{ %>
-            <%- post.content.substring(0, 200) %>
-            <% } %>
             <% } %>
         </div>
         <footer class="article-footer">
@@ -51,3 +47,8 @@
 <% if (!index) { %>
 <%- partial('comment/index') %>
 <% } %>
+<script type="text/javascript">
+$('.article-entry').each(function(){
+  $(this).html($(this).text().substring(0,300)+'…')
+})
+</script>
